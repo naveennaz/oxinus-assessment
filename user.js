@@ -89,20 +89,20 @@ class User {
         // return rows[0]
 
         // Send email
-        const mailOptions = {
-            from: 'naveeine@gmail.com',
-            to: email,
-            subject: 'Welcome to My App',
-            text: `Hello ${first_name} ${last_name},\nWelcome to My App!`
-        };
+        // const mailOptions = {
+        //     from: 'naveeine@gmail.com',
+        //     to: "naveen.nn2@gmail.com",
+        //     subject: 'Welcome to My App',
+        //     text: `Hello ${first_name} ${last_name},\nWelcome to My App!`
+        // };
 
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                console.error('Error sending email:', error);
-            } else {
-                console.log('Email sent:', info.response);
-            }
-        });
+        // transporter.sendMail(mailOptions, (error, info) => {
+        //     if (error) {
+        //         console.error('Error sending email:', error);
+        //     } else {
+        //         console.log('Email sent:', info.response);
+        //     }
+        // });
 
         return { success: true, user: rows[0] };
 
